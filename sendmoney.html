@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alke Wallet - Enviar Dinero</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="menu.html">Alke Wallet</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><span class="nav-link">Bienvenid@</span></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menú Principal</a></li>
+            <li class="nav-item"><a class="nav-link" href="deposit.html">Depositar</a></li>
+            <li class="nav-item"><a class="nav-link" href="sendmoney.html">Enviar Dinero</a></li>
+            <li class="nav-item"><a class="nav-link" href="transactions.html">Últimos Movimientos</a></li>
+            <li class="nav-item"><a href="login.html" class="btn btn-outline-danger btn-sm">Cerrar sesión</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center g-4">
+            <!-- Formulario de Enviar Dinero -->
+            <div class="col-lg-7 col-md-12">
+                <div class="sendmoney-container">
+                    <h2>Enviar Dinero</h2>
+                    <div class="alert alert-info mb-4">
+                        <strong>Saldo actual:</strong> <span id="saldoActual">$5.000.000</span>
+                    </div>
+                    <form id="sendmoneyForm">
+                        <div class="mb-3">
+                            <label for="sendmoneyContact" class="form-label">Seleccionar Contacto</label>
+                            <select class="form-select" id="sendmoneyContact" required>
+                                <option value="">Seleccione un contacto...</option>
+                            </select>
+                        </div>
+                    <button 
+                        class="btn btn-primary  mb-3" data-bs-toggle="modal" data-bs-target="#addContactModal">+ Agregar Contacto</button>
+                        <div class="mb-3">
+                            <label for="sendmoneyAmount" class="form-label">Monto a Enviar</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="number" class="form-control" id="sendmoneyAmount" placeholder="0" min="1" required>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="sendmoneyDescription" class="form-label">Mensaje (opcional)</label>
+                            <textarea class="form-control" id="sendmoneyDescription" rows="3"></textarea>
+                        </div>
+                        <div class="alert alert-danger d-none" id="errorMessage"></div>
+                        <div class="alert alert-success d-none" id="successMessage"></div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Enviar Dinero</button>
+                            <a href="menu.html" class="btn btn-outline-secondary">Menú Principal</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contactos -->
+                    <div class="col-lg-5 col-md-12">
+            <div class="contacts-container" id="contactsList">
+                <div class="card shadow contacts-card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Contactos</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="list-group list-group-flush" id="contactList">
+                            <a href="#" class="list-group-item list-group-item-action contact-item" data-name="María González Pérez" data-account="234567" data-bank="Banco de Chile" data-email="maria.gonzalez@email.cl">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">María González Pérez</h6>
+                                </div>
+                                <p class="mb-1 small">Banco de Chile - Cuenta: 234567</p>
+                                <small class="text">maria.gonzalez@email.cl</small>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action contact-item" data-name="Carlos Rodríguez Silva" data-account="456123" data-bank="Banco Estado" data-email="carlos.rodriguez@correo.cl">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Carlos Rodríguez Silva</h6>
+                                </div>
+                                <p class="mb-1 small">Banco Estado - Cuenta: 456123</p>
+                                <small class="text">carlos.rodriguez@correo.cl</small>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action contact-item" data-name="Valentina Soto Muñoz" data-account="789012" data-bank="Banco Falabella" data-email="valentina.soto@email.cl">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Valentina Soto Muñoz</h6>
+                                </div>
+                                <p class="mb-1 small">Banco Falabella - Cuenta: 789012</p>
+                                <small class="text">valentina.soto@email.cl</small>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action contact-item" data-name="Pedro Fernández Torres" data-account="567890" data-bank="Banco BCI" data-email="pedro.fernandez@email.cl">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Pedro Fernández Torres</h6>
+                                </div>
+                                <p class="mb-1 small">Banco BCI - Cuenta: 567890</p>
+                                <small class="text">pedro.fernandez@email.cl</small>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action contact-item" data-name="Ana Martínez López" data-account="345678" data-bank="Banco Santander" data-email="ana.martinez@mail.cl">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Ana Martínez López</h6>
+                                </div>
+                                <p class="mb-1 small">Banco Santander - Cuenta: 345678</p>
+                                <small class="text">ana.martinez@mail.cl</small>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action contact-item" data-name="Diego Morales Vega" data-account="678901" data-bank="Banco Scotiabank" data-email="diego.morales@mail.cl">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Diego Morales Vega</h6>
+                                </div>
+                                <p class="mb-1 small">Banco Scotiabank - Cuenta: 678901</p>
+                                <small class="text">diego.morales@mail.cl</small>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action contact-item" data-name="Sofía Ramírez Castro" data-account="890123" data-bank="Banco Itaú" data-email="sofia.ramirez@correo.cl">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Sofía Ramírez Castro</h6>
+                                </div>
+                                <p class="mb-1 small">Banco Itaú - Cuenta: 890123</p>
+                                <small class="text">sofia.ramirez@correo.cl</small>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action contact-item" data-name="Javier Núñez Rojas" data-account="123456" data-bank="Banco Estado" data-email="javier.nunez@correo.cl">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Javier Núñez Rojas</h6>
+                                </div>
+                                <p class="mb-1 small">Banco Estado - Cuenta: 123456</p>
+                                <small class="text">javier.nunez@correo.cl</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Agregar contacto-->
+<div class="modal fade" id="addContactModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-0">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Agregar contacto</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <form id="addContactForm">
+
+                    <div class="mb-3">
+                        <label class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="contactName" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Banco</label>
+                        <select class="form-select" id="contactBank" required>
+                            <option value="">Seleccione banco</option>
+                            <option>Banco de Chile</option>
+                            <option>Banco Estado</option>
+                            <option>Banco Falabella</option>
+                            <option>Banco Santander</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Número de cuenta</label>
+                        <input type="text" class="form-control" id="contactAccount" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" id="contactEmail" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        Guardar contacto
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/sendmoney.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alke Wallet - Menú Principal</title>
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="menu.html">Alke Wallet</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><span class="nav-link">Bienvenid@</span></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menú Principal</a></li>
+            <li class="nav-item"><a class="nav-link" href="deposit.html">Depositar</a></li>
+            <li class="nav-item"><a class="nav-link" href="sendmoney.html">Enviar Dinero</a></li>
+            <li class="nav-item"><a class="nav-link" href="transactions.html">Últimos Movimientos</a></li>
+            <li class="nav-item"><a href="login.html" class="btn btn-outline-danger btn-sm">Cerrar sesión</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+<div class="alert alert-info d-flex justify-content-between align-items-center mb-4">
+    <span class="fw-semibold">Saldo disponible </span>
+    <span id="saldoActual" class="fw-bold fs-5">$5.000.000</span>
+</div>
+
+
+        <!--Opciones menú-->
+        <div class="row g-4">
+            <div class="col-md-12">
+                <div class="card h-100 shadow-sm hover-card">
+                    <div class="card-body text-center p-4">
+                        <h5 class="card-title">Depositar Dinero</h5>
+                        <img src="https://cdn-icons-png.freepik.com/512/17567/17567630.png" width="40" alt="depositar">
+                        <p class="card-text text-muted">Agrega dinero a tu cuenta</p>
+                        <a href="deposit.html" class="btn btn-primary">Depositar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="card h-100 shadow-sm hover-card">
+                    <div class="card-body text-center p-4">
+                        <h5 class="card-title">Enviar Dinero</h5>
+                        <img src="https://cdn-icons-png.freepik.com/512/17567/17567628.png" width="40" alt="enviar">
+                        <p class="card-text text-muted">Transfiere dinero a otros usuarios</p>
+                        <a href="sendmoney.html" class="btn btn-primary">Enviar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="card h-100 shadow-sm hover-card">
+                    <div class="card-body text-center p-4">
+                        <h5 class="card-title">Últimos Movimientos</h5>
+                        <img src="https://cdn-icons-png.freepik.com/512/1875/1875461.png" width="40" alt="movimientos">
+                        <p class="card-text text-muted">Ver historial de tus movimientos</p>
+                        <a href="transactions.html" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>    
+    <!--Bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="js/menu.js"></script>
+</body>
+
+</html>
