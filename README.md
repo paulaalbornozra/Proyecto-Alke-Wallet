@@ -1,174 +1,124 @@
-# 💳 Alke Wallet
+# 📚 Caso de Estudio: Proyecto Alke-Wallet — Billetera Digital
 
-Una billetera digital moderna y segura para gestionar tus finanzas de forma simple y eficiente.
-
-## 📋 Descripción
-
-Alke Wallet es una aplicación web de billetera digital que permite a los usuarios gestionar su dinero de manera segura y sencilla. Con una interfaz intuitiva y moderna, los usuarios pueden depositar dinero, enviar transferencias a contactos y revisar el historial completo de sus transacciones.
-
-## ✨ Características
-
-- **🔐 Sistema de Autenticación**: Inicio de sesión seguro con validación de credenciales
-- **💰 Gestión de Saldo**: Visualización en tiempo real del saldo disponible
-- **📥 Depósitos**: Realiza depósitos mediante diferentes métodos (transferencia bancaria, tarjeta de débito, cuenta de ahorro)
-- **📤 Envío de Dinero**: Transfiere dinero a contactos de forma rápida y segura
-- **👥 Gestión de Contactos**: Agrega y administra tus contactos frecuentes
-- **📊 Historial de Transacciones**: Consulta todos tus movimientos con filtros por tipo
-- **🎨 Diseño Responsive**: Interfaz adaptable a dispositivos móviles, tablets y desktop
-- **🌙 Tema Oscuro**: Diseño moderno con gradientes y efectos visuales
-
-## 🚀 Tecnologías Utilizadas
-
-- **HTML5**: Estructura semántica de las páginas
-- **CSS3**: Estilos personalizados con gradientes y animaciones
-- **JavaScript (ES6+)**: Lógica de la aplicación
-- **jQuery 3.7.1**: Manipulación del DOM y eventos
-- **Bootstrap 5.3.0**: Framework CSS para diseño responsive
-- **LocalStorage**: Almacenamiento local de datos del usuario
-
-## 📁 Estructura del Proyecto
-
-```
-Proyecto-Alke-Wallet/
-│
-├── css/
-│   └── style.css              # Estilos personalizados
-│
-├── js/
-│   ├── login.js               # Lógica de inicio de sesión
-│   ├── menu.js                # Lógica del menú principal
-│   ├── deposit.js             # Lógica de depósitos
-│   ├── sendmoney.js           # Lógica de envío de dinero
-│   └── transactions.js        # Lógica de transacciones
-│
-├── index.html                 # Página de bienvenida
-├── login.html                 # Página de inicio de sesión
-├── menu.html                  # Menú principal
-├── deposit.html               # Página de depósitos
-├── sendmoney.html            # Página de envío de dinero
-├── transactions.html          # Historial de transacciones
-└── README.md                  # Este archivo
-```
-
-## 🔧 Instalación
-
-1. **Clona el repositorio**:
-   ```bash
-   git clone https://github.com/paulaalbornozra/Proyecto-Alke-Wallet.git
-   ```
-
-2. **Navega al directorio del proyecto**:
-   ```bash
-   cd Proyecto-Alke-Wallet
-   ```
-
-3. **Abre el proyecto**:
-   - Puedes abrir `index.html` directamente en tu navegador
-   - O usar un servidor local como Live Server en VS Code
-
-## 💻 Uso
-
-### Credenciales de Acceso
-
-Para iniciar sesión en la aplicación, utiliza las siguientes credenciales:
-
-- **Email**: `usuario@ejemplo.com`
-- **Contraseña**: `1234#`
-
-### Funcionalidades Principales
-
-1. **Depositar Dinero**:
-   - Selecciona el método de depósito
-   - Ingresa el monto deseado
-   - Agrega un mensaje opcional
-   - Confirma la operación
-
-2. **Enviar Dinero**:
-   - Selecciona un contacto de la lista o agrégalo
-   - Ingresa el monto a transferir
-   - Añade un mensaje opcional
-   - Confirma el envío
-
-3. **Ver Transacciones**:
-   - Consulta todas tus operaciones
-   - Filtra por tipo (depósitos o envíos)
-   - Revisa el saldo resultante de cada operación
-
-## 🎨 Características de Diseño
-
-- **Gradientes Modernos**: Fondo con degradados púrpura y azul
-- **Efectos Hover**: Animaciones suaves en botones y tarjetas
-- **Diseño Glass Morphism**: Contenedores con transparencia y blur
-- **Iconografía**: Iconos claros y representativos para cada función
-- **Feedback Visual**: Alertas de éxito y error claramente diferenciadas
-
-## 📱 Responsive Design
-
-La aplicación está optimizada para:
-- 📱 Smartphones (< 576px)
-- 📱 Tablets (576px - 768px)
-- 💻 Laptops (768px - 1200px)
-- 🖥️ Desktop (> 1200px)
-
-## 💾 Almacenamiento de Datos
-
-Los datos se almacenan localmente en el navegador usando `localStorage`:
-
-- **saldo-usuario**: Saldo actual del usuario
-- **transacciones**: Array con todas las transacciones
-- **contactos-guardados**: Lista de contactos agregados por el usuario
-
-## 🔒 Validaciones
-
-La aplicación incluye múltiples validaciones:
-
-- ✅ Email debe contener "@"
-- ✅ Contraseña entre 4 y 8 caracteres
-- ✅ Monto debe ser mayor a $0
-- ✅ Saldo suficiente para envíos
-- ✅ Selección obligatoria de método/contacto
-
-## 🌐 Navegadores Compatibles
-
-- Google Chrome (recomendado)
-- Mozilla Firefox
-- Microsoft Edge
-- Safari
-- Opera
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Para contribuir:
-
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📝 Roadmap
-
-Funcionalidades futuras planeadas:
-
-- [ ] Autenticación con backend real
-- [ ] Gráficos de gastos e ingresos
-- [ ] Exportación de transacciones (PDF/Excel)
-- [ ] Notificaciones push
-- [ ] Múltiples cuentas por usuario
-- [ ] Cambio de divisa
-- [ ] Modo claro/oscuro configurable
-
-## 👥 Autores
-
-- **Paula Albornoz** - https://github.com/paulaalbornozra
-
-## 🙏 Agradecimientos
-
-- Bootstrap por el framework CSS
-- jQuery por facilitar la manipulación del DOM
-- Freepik por los iconos utilizados
-- La comunidad de desarrolladores por su inspiración
+> **Portafolio de Paula Albornoz Ramos**  
+> 🔗 GitHub: [github.com/paulaalbornozra](https://github.com/paulaalbornozra)
 
 ---
 
-⭐ Si te gusta este proyecto, no olvides darle una estrella en GitHub!
+## 📌 Descripción de la actividad
+
+**Alke-Wallet** es una billetera digital desarrollada como proyecto integrador del Módulo 2 del bootcamp. La aplicación permite a los usuarios gestionar su dinero de forma simulada: registrarse, iniciar sesión, visualizar su saldo, realizar transferencias entre usuarios y consultar el historial de transacciones.
+
+El proyecto fue desarrollado con HTML, CSS y JavaScript puro (Vanilla JS), lo que implicó construir toda la lógica de la aplicación sin el respaldo de frameworks externos, reforzando el dominio de los fundamentos del lenguaje.
+
+---
+
+## 🚧 Desafío principal
+
+El mayor desafío fue **modelar la lógica de negocio de una billetera digital sin usar ningún framework o librería**:
+
+- Diseñar una arquitectura de datos en JavaScript que representara usuarios, cuentas y transacciones de manera consistente.
+- Implementar un flujo de autenticación simulado (registro/login) con validaciones propias desde cero.
+- Sincronizar el estado de la interfaz con los datos de forma manual, sin herramientas de manejo de estado como React o Vue.
+- Garantizar que las transferencias fueran coherentes: que el saldo disminuyera en el origen y aumentara en el destino sin inconsistencias.
+
+---
+
+## 💡 Solución propuesta
+
+Estructuré la aplicación en módulos separados por responsabilidad:
+
+- **Módulo de usuarios**: manejo del registro, login y sesión activa
+- **Módulo de cuentas**: gestión de saldos y validaciones de transacciones
+- **Módulo de historial**: registro cronológico de movimientos
+- **Módulo de UI**: renderizado dinámico del DOM en respuesta a los cambios de estado
+
+Para la persistencia de datos durante la sesión utilicé objetos JavaScript y `localStorage`, lo que me permitió simular un backend sin salir del entorno del navegador.
+
+---
+
+## 🛠️ Herramientas técnicas utilizadas
+
+| Categoría | Tecnología |
+|-----------|-----------|
+| Lenguajes | HTML5, CSS3, JavaScript ES6+ |
+| Almacenamiento | localStorage (persistencia en sesión) |
+| Estructura | Vanilla JS modular (sin frameworks) |
+| Control de versiones | Git + GitHub |
+| Diseño | CSS Flexbox + Grid para layout responsivo |
+
+---
+
+## 🎓 Principales aprendizajes
+
+1. **Fundamentos sólidos de JavaScript**: Trabajar sin frameworks me obligó a comprender en profundidad cómo funciona el DOM, los eventos, el scope y el manejo de datos en JS puro.
+
+2. **Diseño de estructuras de datos**: Modelar usuarios, cuentas y transacciones como objetos con relaciones entre sí me dio una primera aproximación práctica al diseño de datos antes de aprender bases de datos formales.
+
+3. **Pensamiento orientado a la lógica de negocio**: Implementar las reglas de negocio de una billetera (validar saldo suficiente, registrar movimientos, actualizar múltiples cuentas en una transacción) me enseñó a separar la lógica del negocio de la capa de presentación.
+
+4. **Manejo del estado de la UI de forma manual**: Sin librerías de estado, tuve que sincronizar manualmente los datos con el DOM. Eso me hizo valorar mucho más herramientas como React cuando las empecé a usar.
+
+5. **Importancia de la validación**: Cualquier transferencia mal validada rompía la coherencia de los datos. Aprendí a pensar en los casos borde antes de escribir código.
+
+---
+
+## 📊 Métricas de impacto
+
+| Métrica | Resultado |
+|---------|-----------|
+| Funcionalidades implementadas | 5 flujos completos: registro, login, consulta de saldo, transferencia, historial |
+| Validaciones cubiertas | Saldo insuficiente, usuario inexistente, campos vacíos, transferencia a sí mismo |
+| Tiempo de desarrollo | 2 semanas (desarrollo asincrónico + clases en vivo) |
+| Consistencia de datos | 0 inconsistencias en saldos tras múltiples transferencias en pruebas manuales |
+| Cobertura de requerimientos | 100% de los requerimientos del módulo implementados y funcionales |
+
+---
+
+## 🧠 Habilidades técnicas aplicadas
+
+- ✅ HTML5 semántico y accesible
+- ✅ CSS3 con Flexbox y Grid para diseño responsivo
+- ✅ JavaScript ES6+: funciones, arrays, objetos, destructuring, módulos
+- ✅ Manipulación del DOM y manejo de eventos
+- ✅ localStorage para persistencia de datos en el cliente
+- ✅ Lógica de negocio: validaciones, cálculos de saldo, historial de transacciones
+- ✅ Git y GitHub para control de versiones
+- ✅ Pensamiento algorítmico aplicado a un problema real
+
+---
+
+## 🏆 ¿Por qué elegí este proyecto para mi portafolio?
+
+Elegí **Alke-Wallet** porque representa la consolidación de los fundamentos que sostienen todo lo que vino después en mi formación. Antes de usar React o Node.js, tuve que construir una aplicación funcional y compleja con solo HTML, CSS y JavaScript puro — y eso me obligó a entender de verdad cómo funciona la web.
+
+Este proyecto demuestra que no solo aprendí sintaxis: aprendí a pensar en términos de lógica de negocio, flujos de usuario y consistencia de datos. Cuando más adelante incorporé frameworks, los entendí como herramientas que resuelven problemas que ya había enfrentado en carne propia.
+
+Es también el proyecto que más claramente muestra mi punto de partida en el bootcamp y el nivel de complejidad que fui capaz de abordar en las primeras etapas de mi formación.
+
+---
+
+## 🔐 Credenciales de prueba
+
+| Campo | Valor |
+|-------|-------|
+| Email | usuario@ejemplo.com |
+| Contraseña | 1234# |
+
+---
+
+## 🔗 Links del proyecto
+
+- 📁 **Repositorio**: [github.com/paulaalbornozra/Proyecto-Alke-Wallet](https://github.com/paulaalbornozra/Proyecto-Alke-Wallet)
+
+---
+
+## 👩‍💻 Sobre mí
+
+**Paula Albornoz Ramos**  
+Desarrolladora Full Stack Trainee · JavaScript · HTML · CSS  
+📍 Santiago, Chile
+
+🐙 [github.com/paulaalbornozra](https://github.com/paulaalbornozra)
+
+---
